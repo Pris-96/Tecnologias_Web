@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositorio Central</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Leander West Furumo</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/estilos.css">
+
+
+    </head>
     
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #007bff; padding: 15px;">
+            <a class="navbar-brand text-white" href="#"><b>Leander West Furumo</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#utdanning">Utdanning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#erfaring">Erfaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#ferdigheter">Ferdigheter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#referanser">Referanser</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <section id="informacion_personal" class="container">
+        <table class="table table-borderless">
+            <tr>
+                <td><b>Adresse</b></td><td>Kleiva 19D, 1476 Rasta</td>
+                <td rowspan="4"><img src="/images/foto_cv.png" alt="Foto de perfil" class="img-fluid rounded" style="width: 150px; height: auto;"></td>
+            </tr>
+            <tr>
+                <td><b>E-post</b></td><td> leanderfurumo@gmail.com</td>
+            </tr>
+            <tr>
+                <td><b>Mobil</b></td><td> +47 47 87 90 07</td>
+            </tr>
+            <tr>
+                <td><b>Fodt</b></td><td>30, April, 2000</td>
+            </tr>
+        </table>
+    </section>    
+
+
+
+    <section id="utdanning" class="container">
+        <h2>Utdanning</h2>
+        <hr>
+        <table class="table">
+            <tr>
+                <td>2020 - </td>
+                <td><b>Informatikk: Språkteknologi, Bachelor</b><br>Universitetet i Oslo</td>
+            </tr>
+            <tr>
+                <td>2018 - 2020</td>
+                <td><b>Studiespesialisering med språk, samfunnsfag og økonomi</b><br>Lillestrøm Videregående Skole</td>
+            </tr>
+            <tr>
+                <td>2016 - 2018</td>
+                <td><b>Medier og kommunikasjon</b><br>Mailand Videregående Skole</td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <section id="erfaring" class="container">
+        <h2>Erfaring</h2>
+        <hr>
+        <table class="table">
+            <tr>
+                <td>jun. - aug. 2018</td>
+                <td><b>Badebetjent, Skien Fritidspark</b><br>Ringevikar. Betjene og overvåke bassengområder. Ansvar for renhold/vedlikehold i arealer<br> tilknyttet Skien Fritidspark</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section id="ferdigheter" class="container">
+        <h2>Ferdigheter</h2>
+        <hr>
+        <ul class="list-group">
+            <li class="list-group-item">Livredningskurs gjennom Skien Fritidspark og LEK med oppfølging</li>
+            <li class="list-group-item">Førerkort klasse B</li>
+            <li class="list-group-item">Snakker norsk som morsmål, flytende engelsk og har tatt 5 ar med spansk giennom ungdomsskole og videregaende</li>
+        </ul>
+    </section>
+    
+
+    <section id="referanser" class="container mt-4">
+        <h2>Referanser</h2>
+        <hr>
+        <p>Ved forespørsel</p>
+    </section>
+    
+
+
+    
+    <div class="container mt-4">
+        <table class="table table-borderless">
+            <hr>
+            <tbody>
+                <tr>
+                    <td><strong>LinkedIn</strong></td>
+                    <td><a href="https://www.linkedin.com/in/leander-west-furumo" target="_blank">https://www.linkedin.com/in/leander-west-furumo</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Lenke til CV</strong></td>
+                    <td><a href="https://lblend.github.io/CV" target="_blank">https://lblend.github.io/CV</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer class="bg-light text-dark py-4">
+        <section id="kontakt" class="container">
+            <h2>Kontakt</h2>
+            <hr>
+            <div class="form-container">
+                <form id="Formulario">
+                    <label for="nombre">Tall:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span id="nombre-error" style="color: red;"></span>
+                    <br>
+        
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" style="color: red;"></span>
+                    <br>
+        
+                    <label for="mensaje">Beskjed:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <span id="mensaje-error" style="color: red;"></span>
+                    <br>
+    
+                    <button type="submit">Sende</button>
+                </form>
+            </div>                       
+        </section>
+    </footer>
+    <script src="./funciones.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script> <!-- Archivo de JavaScript personalizado -->
+
 </body>
 </html>
